@@ -6,12 +6,11 @@ import java.util.Objects;
 
 public class TodoItem {
 
-    private final String id;
+    private String id;
     private String title;
     private String description;
     private String timestamp;
     private Status status;
-
 
     public TodoItem(String id, String title, String description, String timestamp, Status status) {
         this.id = id;
@@ -19,6 +18,10 @@ public class TodoItem {
         this.description = description;
         this.timestamp = timestamp;
         this.status = status;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getId() {
